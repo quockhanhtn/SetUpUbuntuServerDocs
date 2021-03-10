@@ -149,7 +149,7 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 bind-address = 127.0.0.1 to 0.0.0.0
 ```
 
-![desc](/img/bind-address.png "Logo Title Text 1")
+![desc](/img/bind-address.png "Bind Address")
 
 - You can also change startup settings of MySQL after system boot-up through the systemctl commands
 
