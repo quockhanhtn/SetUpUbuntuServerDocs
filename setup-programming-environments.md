@@ -30,6 +30,9 @@ java -version                       # check JRE version
 javac -version                      # check JDK version
 ```
 
+<br/>
+<br/>
+
 ### Install the .NET SDK or the .NET Runtime on Ubuntu 20.04
 
 - Go to https://dotnet.microsoft.com/download/dotnet to get direct link for download package
@@ -114,8 +117,71 @@ export PATH=$PATH:$HOME/dotnet
 
 - Read more : [Compile and run C# in the Command Line (Linux, Mac & Windows)](https://kozmicluis.com/compile-c-sharp-command-line/)
 
+
+<br/>
+<br/>
+
+### Install Node JS
+
+```bash
+sudo apt update;\         #
+sudo apt install nodejs   # Install Node JS
+nodejs -v                 # Check version
+```
+
+<br/>
+<br/>
+
+### Install Python
+
+```bash
+# update python 3
+sudo apt update;\
+sudo apt -y upgrade
+python3 -V                  # check version
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+
+# install Python 2
+sudo apt install python2
+python2 -V                  # check version
+```
+
+<br/>
+<br/>
+
+## Install Go Language
+
+```bash
+sudo apt install golang     # install go lang
+go version                  # check version
+```
+
+- Example Go Lang code
+
+```go
+package main  
+ 
+import "fmt" 
+ 
+func main() {  
+   fmt.Println("Hello World")  
+}
+```
+
+- Run by command
+
+```bash
+go run helloworld.go
+go run {file-name}
+```
+
+
+
 ### References
 - [How to Install GCC (build-essential) on Ubuntu 20.04](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
 - [How To Install Java with Apt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
 - [How to install .net core ARM64 SDK in Raspberry Pi 4](https://sumodh.com/2020/05/05/how-to-install-net-core-x64-sdk-in-raspberry-pi-4/?doing_wp_cron=1615389830.6275599002838134765625)
 - [Setup .NET Core 3.0 Runtime and SDK on Raspberry Pi 4](https://edi.wang/post/2019/9/29/setup-net-core-30-runtime-and-sdk-on-raspberry-pi-4)
+- [How To Install Node.js on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
+- [Install Python 2 on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/install-python-2-on-ubuntu-20-04-focal-fossa-linux)
+- [How To Install Python 3 and Set Up a Programming Environment on an Ubuntu 20.04 Server](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-20-04-server)
